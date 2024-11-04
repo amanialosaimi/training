@@ -1,21 +1,21 @@
 on:
-    push:
-        branches:
-             - main
+  push:
+    branches:
+      - main
 permissions: 
-    pull-requests: read
-    contents: read
-    repository-projects: read
+  pull-requests: read
+  contents: read
+  repository-projects: read
 
 jobs:
-    display_files:
-         name: job for displaying file content
-         runs-on: ubuntu-latest
-         steps:
-             - name: checkout repository
-               uses: actions/checkut@v2
+  display_files:
+     name: job for displaying file content
+     runs-on: ubuntu-latest
+     steps:
+        - name: checkout repository
+          uses: actions/checkut@v2
 
-             - name: display file cont
-               run : 
+        - name: display file cont
+          run : 
                  cat test.txt
-               shell: bash
+          shell: bash
