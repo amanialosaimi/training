@@ -2,7 +2,7 @@ on: [push]
 jobs:
    display_files:
       name: run a simple command
-      runs-on: ubento-lareste
+      runs-on: ubuntu-latest
       steps:
           - name: display output
             run: 
